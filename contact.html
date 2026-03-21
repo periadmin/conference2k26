@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    body{
+         margin: 0;
+    height: 100vh;
+	text-align:center;
+    background: linear-gradient(-45deg, #ff6b6b, #6b6bff, #00c9a7, #f9f871);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Navbar */
+.navbar {
+            display: flex;
+            justify-content: space-between; /* Logo left, menu right */
+            align-items: center;
+            padding: 10px 10px;
+}
+.nav-links a{
+    justify-content: flex-end;
+    color:white;
+    text-decoration:none;
+    margin-left: 15px;
+    font-size:16px;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+.logo {
+     height: 100px; /* Adjust logo size */
+     width: 100px;
+     padding:10px 10px;
+     display: flex;
+
+}
+.about {
+	color:red;
+}
+.speakers {
+	color:orange;
+}
+.program  {
+	color:yellow;
+}
+.paper {
+	color:darkblue;
+}
+.publication {
+	color:meganta;
+}
+.accepted {
+	color:cyan;
+}
+.contact {
+	color:purple;
+}
+.card{
+        width: 600px;
+        background: #ffffff;
+        padding: 40px;
+		position:center;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        text-align: left;
+		margin-left: 350px;
+        justify-content: center;
+    }
+
+.card h2{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+.card h2 span:first-child{
+        color: green;
+        font-weight: bold;
+    }
+.card h2 span:last-child{
+        color: #1b2a8f;
+        font-weight: bold;
+    }
+
+.card p{
+        color: #444;
+        line-height: 1.6;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+.contact-info{
+        margin-top: 15px;
+        font-size: 17px;
+    }
+.contact-info div{
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+.contact-info i{
+        margin-right: 12px;
+        font-size: 20px;
+        color: #1b2a8f;
+    }
+
+.email{
+        color: #ff6600;
+        font-weight: bold;
+    }
+.email a:hover{
+    text-decoration:none;
+}
+.phone{
+        color: #ff6600;
+        font-weight: bold;
+    }
+
+@media(max-width: 650px){
+ .card{
+            width: 90%;
+            padding: 25px;
+       }
+}
+
+</style>
+</head>
+
+<body>
+<!-- Logo image -->
+<div class="navbar">
+        <img src="https://i.ibb.co/qLxqSCvj/logo-removebg-preview.png" alt="Website Logo" class="logo">
+<!-- Navbar -->
+<div class="nav-links">
+        <a href="index.html">
+         <span class="contact">Home</span></a>
+        <a href="about.html">
+         <span class="about">About</span></a>
+        <a href="#">
+         <span class="speakers">speakers</span></a>
+        <a href="program.html">
+         <span class="program">Program committee</span></a>
+        <a href="#">
+         <span class="paper">Paper Submission</span></a>
+        <a href="publication.html">
+         <span class="publication">Journal Publication</span></a>
+        <a href="#">
+         <span class="accepted">Accepted Paper</span></a>
+</div>
+</div>
+<p>
+<div class="card">
+    <h2>
+        <span>Contact</span> <span>Us</span>
+    </h2>
+
+    <p>
+        We are happy to assist you with any inquiries regarding the InterNational
+        Conference. Please feel free to reach out to us for information about
+        registration, submissions, venue, or any other event-related questions.
+    </p>
+
+    <div class="contact-info">
+        <div>
+            <i class="fas fa-envelope"></i>
+            <span>Email: <a href="mailto:periit210426@gmail.com">
+         <span class="email">periit210426@gmail.com</span></span></a>
+        </div>
+
+        <div>
+            <i class="fas fa-phone"></i>
+            <span>Phone: </span><a href="tel:+91 9944039390">
+         <span class="phone">+91 9944039390</span></a>
+    </div>
+	<div>
+            <i class="fas fa-phone"></i>
+            <span>Phone: </span><a href="tel:+91 7010530724">
+         <span class="phone">+91 7010530724</span></a>
+    </div>
+</div>
+</p>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICEECT'2026</title>
+
+</head>
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ff6b6b, #6b6bff, #00c9a7, #f9f871);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Top Contact Bar */
+.top-bar{
+    background:transparent;
+    padding:10px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar span{
+    background:#ff6a00;
+    color:white;
+    padding:8px 15px;
+    margin:5px;
+    display:inline-block;
+    border-radius:5px;
+    font-size:14px;
+}
+/* Quick Links */
+.quick-links{
+    background:pink;
+    padding:20px;
+    margin:20px;
+    border-radius:8px;
+}
+
+.quick-links h2{
+    margin-top:0;
+}
+
+.quick-links ul{
+    list-style:none;
+    padding:0;
+}
+
+.quick-links li{
+    background:white;
+    margin:8px 0;
+    padding:10px;
+    border-radius:5px;
+}
+
+.quick-links li a{
+    color:black;
+    text-decoration:none;
+}
+.content {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20%;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+     height: 100px; /* Adjust logo size */
+     width: 100px;
+     padding:10px 10px;
+     display: flex;
+
+}
+
+/* Navbar */
+.navbar {
+            display: flex;
+            justify-content: space-between; /* Logo left, menu right */
+            align-items: center;
+            padding: 10px 10px;
+}
+.nav-links a{
+    justify-content: flex-end;
+    color:white;
+    text-decoration:none;
+    margin-left: 15px;
+    font-size:16px;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+.about {
+	color:red;
+}
+.speakers {
+	color:orange;
+}
+.program  {
+	color:yellow;
+}
+.paper {
+	color:darkblue;
+}
+.publication {
+	color:meganta;
+}
+.accepted {
+	color:cyan;
+}
+.contact {
+	color:purple;
+}
+/* Tagline Container */
+.tagline-container {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ff4da6, #ff66cc);
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Moving Text */
+.tagline-text {
+    display: inline-block;
+    white-space: nowrap;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    animation: scrollLeft 20s linear infinite;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Hero Section */
+.hero{
+    color:black;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    margin:5px 0;
+    font-weight:normal;
+}
+
+.organized{
+    margin-top:30px;
+    font-size:18px;
+}
+
+.register-btn{
+    margin-top:25px;
+    padding:12px 30px;
+    background:#ADD8E6;
+    border:none;
+    border-radius:25px;
+    color:red;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.register-btn:hover{
+    background:white;
+}
+/* Journal Section */
+.journal{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.journal h2{
+    letter-spacing:4px;
+    color:#2a5298;
+}
+
+.journal a{
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    color:#0b4ea2;
+}
+.fixed-img {
+    width: 200px;
+    height: 200px;
+    object-fit: center;
+    border: 2px solid black;
+}
+
+.footer{
+    background:#0b4ea2;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICEECT'2026</title>
+
+</head>
+<body>
+<div class="top-bar">
+    <a href="tel:📞 +91 9944039390">
+         <span class="top-bar">📞 +91 9944039390</span></a>
+	<a href="tel:📞 +91 7010530724">
+         <span class="top-bar">📞 +91 7010530724</span></a>
+    <a href="mailto: 📧 periit210426@gmail.com">
+         <span class="top-bar">📧 periit210426@gmail.com</span></a>
+</div>
+<!-- Logo image -->
+<div class="navbar">
+        <img src="https://i.ibb.co/qLxqSCvj/logo-removebg-preview.png" alt="Website Logo" class="logo">
+<!-- Navbar -->
+<div class="nav-links">
+        <a href="about.html">
+         <span class="about">About</span></a>
+        <a href="#">
+         <span class="speakers">speakers</span></a>
+        <a href="program.html">
+         <span class="program">Program committee</span></a>
+        <a href="#">
+         <span class="paper">Paper Submission</span></a>
+        <a href="publication.html">
+         <span class="publication">Journal Publication</span></a>
+        <a href="#">
+         <span class="accepted">Accepted Paper</span></a>
+	<a href="contact.html">
+         <span class="contact">Contact Details</span></a>
+</div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>International Conference on Semiconductor,<br> Smart Grid and Intelligent Communication Technologies.</h1>
+    <h2>ICSSICT’26 </h2>
+    <h3>ORGANISED BY</h3>
+
+    <div class="organized">
+        Peri Institute of Technology, mannivakkam<br>Collaboration with the University of RWANDA
+	</div>
+    <button class="register-btn">
+    <a href="https://forms.gle/f3MNDsRf1yHCfvnQ6">Register</a></button>
+	<p><img src="https://i.ibb.co/v6hFL7jg/PERI.jpg"  class="fixed-img"> 
+	<img src="https://i.ibb.co/Ds08NFZ/RWANDA.jpg"  class="fixed-img"></p>
+    <h1>International Conference 2026</h1>
+</div>
+<div class="tagline-container">
+    <div class="tagline-text">
+        🚨 Papers will be published as soon as possible. last date for submission: 2nd april 2026. 🚨
+    </div>
+</div>
+<div class="quick-links">
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="presentation.html">Presentation Guidelines</a></li>
+        <li><a href="instructions.html">Instructions for Participants</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="#">Paper Submission</a></li>
+        <li><a href="https://forms.gle/f3MNDsRf1yHCfvnQ6">Registration</a></li>
+        <li><a href="awards.html">Awards</a></li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 ICEECT | Designed & Developed
+</div>
+
+</body>
+</html>
